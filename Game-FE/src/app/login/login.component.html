@@ -1,0 +1,41 @@
+<div class="login-container flex-column">
+  <form class="login-form" #f="ngForm" (ngSubmit)="onSubmit(f)">
+    <h2 class="text-center">Login</h2>
+    <div class="form-floating mb-4">
+      <input
+        type="text"
+        class="form-control"
+        id="username"
+        name="username"
+        placeholder="Insert your username"
+        required
+        ngModel
+        #username="ngModel"
+        minlength="4"
+        [ngClass]="{ 'is-invalid': error }"
+      />
+      <label for="username">Email address</label>
+    </div>
+    <div class="form-floating mb-3">
+      <input
+        type="password"
+        class="form-control"
+        id="password"
+        name="password"
+        placeholder="Insert your password"
+        required
+        ngModel
+        #password="ngModel"
+        minlength="4"
+        [ngClass]="{ 'is-invalid': error }"
+      />
+      <label for="password">Password</label>
+      <div class="invalid-feedback my-3" *ngIf="error">
+        {{ error }}
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary w-100" [disabled]="!f.valid">
+      Login
+    </button>
+  </form>
+</div>

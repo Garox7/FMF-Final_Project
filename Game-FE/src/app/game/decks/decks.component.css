@@ -1,0 +1,49 @@
+.decks_container {
+  position: relative;
+}
+
+.principal_deck {
+  margin-right: 8px;
+}
+
+.discard_pile {
+  position: relative;
+}
+
+.discard_pile:hover,
+.discard_pile.selected {
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  margin-top: -2px;
+}
+
+.discard_pile *:not(:first-child) {
+  position: absolute;
+  top: 0px;
+  left: 0;
+}
+
+.discard_pile :last-child {
+  top: 35px;
+}
+
+.error_console {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+  vertical-align: middle;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease-in;
+}
+
+.error-message {
+  opacity: 1;
+  transition: all 0.2s ease;
+}
+
+.error-message-hidden {
+  opacity: 0;
+  transition: all 0.2s ease;
+}

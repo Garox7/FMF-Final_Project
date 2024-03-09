@@ -1,0 +1,41 @@
+.lederboard_container {
+  color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+}
+
+.leaderboard_table .leaderboard_row:nth-child(odd) {
+  background-color: #161e2a;
+}
+
+.place_number {
+  color: white;
+}
+
+.leaderboard_table .leaderboard_row:nth-child(3) > .place_number {
+  background-color: yellow;
+  color: black;
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  margin: 0 8px;
+}
+
+.leaderboard_table .leaderboard_row:nth-child(4) > .place_number {
+  background-color: silver;
+  color: black;
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  margin: 0 8px;
+}
+
+.leaderboard_table .leaderboard_row:nth-child(5) > .place_number {
+  background-color: burlywood;
+  color: black;
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  margin: 0 8px;
+}
+
+.leaderboard_row {
+  padding: 8px 0;
+  border-radius: 30px;
+}

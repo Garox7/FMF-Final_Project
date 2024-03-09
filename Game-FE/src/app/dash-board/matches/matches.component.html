@@ -1,0 +1,54 @@
+<div class="matches_list_container w-100 h-100 text-center p-2">
+  <div class="mathes_list_table h-100 p-3">
+    <h3 class="mb-3">Your matches</h3>
+
+    <div class="matches_list_header row mb-3">
+      <div class="col">Match</div>
+      <div class="col">State</div>
+      <div class="col">Round</div>
+      <div class="col">Your Score</div>
+      <div class="col">AI Score</div>
+      <div class="col"></div>
+    </div>
+    <div
+      *ngFor="let match of matches; let i = index"
+      class="matches_list_row row mb-2"
+    >
+      <div class="col">{{ match.id }}</div>
+      <div class="col">
+        @if (match.status === 0) { In progress } @else if (match.status === 1) {
+        Won } @else { Lost }
+      </div>
+      <div class="col">{{ match.round }}</div>
+      <div class="col">{{ match.playerScore }}</div>
+      <div class="col">{{ match.computerScore }}</div>
+      <div class="col actions">
+        <div class="row">
+          <div class="col-4">
+            @if (match.status == 0) {
+            <span class="material-symbols-outlined" (click)="onMatch(match.id)">
+              play_circle
+            </span>
+            }
+          </div>
+          <div class="col-4">
+            <span
+              class="material-symbols-outlined"
+              (click)="onDeleteMatch(match.id)"
+            >
+              delete_forever
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <app-modal
+    *ngIf="modal"
+    [title]="modalTitle"
+    [content]="modalContent"
+    [actions]="modalActions"
+    (actionClicked)="handleModalAction($event)"
+  ></app-modal>
+</div>

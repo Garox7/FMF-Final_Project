@@ -1,0 +1,23 @@
+<div class="modal_backdrop">
+  <div class="modal_container text-center p-4">
+    <header class="moda_title">
+      <h4>
+        {{ title }}
+      </h4>
+    </header>
+    <main class="modal_content mb-4">
+      <p>
+        {{ content }}
+      </p>
+    </main>
+    <footer class="modal_action row gap-2">
+      <button
+        *ngFor="let action of actions; let i = index"
+        class="col button primary_button"
+        (click)="onActionClick(action.action)"
+      >
+        {{ action.label }}
+      </button>
+    </footer>
+  </div>
+</div>

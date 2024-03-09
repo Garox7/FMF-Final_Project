@@ -1,0 +1,29 @@
+<div class="decks_container default_container flex_row align-items-start mt-2">
+  <div class="discard_pile_cointainer flex_row">
+    <div
+      class="playing_cards face_down principal_deck"
+      (click)="onDrawCard()"
+    ></div>
+    @for (cards of discardCards; track pile; let pile = $index ) {
+    <div
+      class="discard_pile"
+      (click)="onSelectPileIndex(pile)"
+      [class.selected]="selectedPileIndex === pile"
+    >
+      @for (card of cards; track $index) {
+      <app-card [card]="card"></app-card>
+      }
+    </div>
+    }
+  </div>
+  <div class="error_console w-25 mx-4 mt-2">
+    <p
+      [ngClass]="{
+        'error-message': showError,
+        'error-message-hidden': !showError
+      }"
+    >
+      {{ errorMessage }}
+    </p>
+  </div>
+</div>

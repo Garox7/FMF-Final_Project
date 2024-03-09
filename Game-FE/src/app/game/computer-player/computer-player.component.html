@@ -1,0 +1,10 @@
+<div class="default_container flex_column">
+  <div class="flex_row">
+    <div
+      class="playing_cards face_down player_hand"
+      *ngFor="let card of initialHand; let i = index"
+    ></div>
+  </div>
+  <span class="break_line w-50"></span>
+  <h5 class="player_name player_ai w-50">PLAYER AI - Score: {{ score }}</h5>
+</div>

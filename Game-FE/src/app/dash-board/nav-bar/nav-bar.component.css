@@ -1,0 +1,29 @@
+.my_navbar {
+  color: white;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  border: transparent;
+  background-image: transparent;
+  transition: all 0.15s ease-in-out;
+}
+
+.nav-link:hover {
+  background-image: linear-gradient(
+    to right,
+    #4cb8c4 0%,
+    #3cd3ad 51%,
+    #4cb8c4 100%
+  ) !important;
+}
+
+.nav-link.active {
+  background-color: transparent;
+  background-image: linear-gradient(
+    to right,
+    #4cb8c4 0%,
+    #3cd3ad 51%,
+    #4cb8c4 100%
+  ) !important;
+}

@@ -1,0 +1,39 @@
+.modal_backdrop {
+  background: rgba(0, 0, 0, 0.41);
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal_container {
+  background-color: #131b29;
+  color: white;
+  width: 65%;
+  max-width: 450px;
+  border: 0.5px solid lightgrey;
+  border-radius: 12px;
+}
+
+footer :first-child {
+  background-image: linear-gradient(
+    to right,
+    #f09819 0%,
+    #edde5d 51%,
+    #f09819 100%
+  );
+}
+
+footer :nth-child(2) {
+  background-image: linear-gradient(
+    to right,
+    #4cb8c4 0%,
+    #3cd3ad 51%,
+    #4cb8c4 100%
+  );
+}

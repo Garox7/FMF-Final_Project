@@ -1,0 +1,28 @@
+<div class="lederboard_container w-100 h-100 text-center p-2">
+  <div class="leaderboard_table h-100 p-3">
+    <h3 class="mb-4">Leaderboard</h3>
+
+    <div class="matches_list_header row mb-3">
+      <div class="col">Place</div>
+      <div class="col">User</div>
+      <div class="col">Matches</div>
+      <div class="col">Won</div>
+      <div class="col">Lost</div>
+      <div class="col">Won Rate</div>
+    </div>
+
+    <div
+      *ngFor="let leaderBoard of leaderBoards; let i = index"
+      class="leaderboard_row row mb-2"
+    >
+      <div class="place_number col">{{ i + 1 }}</div>
+      <div class="col-2">{{ leaderBoard.playerUsername }}</div>
+      <div class="col-2">{{ leaderBoard.totalMatches }}</div>
+      <div class="col-2">{{ leaderBoard.wonMatches }}</div>
+      <div class="col-2">{{ leaderBoard.lostMatches }}</div>
+      <div class="col-2">
+        {{ leaderBoard.winRate | number : "1.2-2" }}
+      </div>
+    </div>
+  </div>
+</div>

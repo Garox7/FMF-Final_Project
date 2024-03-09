@@ -1,0 +1,19 @@
+<div class="game_container">
+  <div class="logout_container">
+    <span class="material-symbols-outlined logout_button" (click)="onLogout()">
+      logout
+    </span>
+    <span class="player_username">{{ playerUsername }}</span>
+  </div>
+  <div class="container flex_column text-center h-100">
+    <app-nav-bar></app-nav-bar>
+    <div class="dashboard_container h-75 mb-4">
+      <router-outlet></router-outlet>
+    </div>
+    <div class="w-75">
+      <button class="primary_button" (click)="onNewMatch()">
+        Play new match
+      </button>
+    </div>
+  </div>
+</div>

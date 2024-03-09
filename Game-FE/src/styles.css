@@ -1,0 +1,158 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+/******************
+    BUTTON
+*******************/
+button {
+  width: 100%;
+  padding: 15px 45px;
+  margin-bottom: 8px !important;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #fff;
+  border-radius: 10px !important;
+  border: none;
+  display: block;
+}
+
+button.primary_button {
+  background-image: linear-gradient(
+    to right,
+    #f09819 0%,
+    #edde5d 51%,
+    #f09819 100%
+  );
+}
+
+button.secondary_button {
+  background-image: linear-gradient(
+    to right,
+    #4cb8c4 0%,
+    #3cd3ad 51%,
+    #4cb8c4 100%
+  );
+}
+
+button:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+/******************
+    CONTAINER
+*******************/
+.game_container {
+  height: 100%;
+  background: #131b29;
+}
+
+.dashboard_container {
+  background: #060d19;
+  width: 100%;
+  border-radius: 15px;
+  max-width: 960px;
+}
+
+.default_container {
+  width: 100%;
+  height: 100%;
+}
+
+.discard_pile_cointainer {
+  margin: 0 8px 0;
+}
+
+/******************
+    FLEX RULES
+*******************/
+.flex_column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex_row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+/******************
+GENERAL GAME SETTINGS
+*******************/
+.break_line {
+  height: 2px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 100%;
+}
+
+.player_name {
+  color: rgba(255, 255, 255, 0.5);
+  /* align-self: flex-start; */
+  vertical-align: baseline;
+  text-transform: uppercase;
+}
+
+.player_name.player_ai {
+  align-self: flex-end;
+}
+
+/******************
+    CARD STYLE
+*******************/
+.playing_cards {
+  background: white;
+  color: black;
+  width: 100px;
+  height: 160px;
+  border-radius: 12px;
+  margin: 8px 0 8px;
+  border: 5px solid white;
+}
+
+.playing_cards.player_hand:not(:first-child) {
+  margin-left: -55px;
+}
+
+.playing_cards.face_down {
+  background: #262626;
+}
+
+.playing_cards.face_down.principal_deck {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+  .playing_cards {
+    width: 80px;
+    height: 140px;
+    font-size: 14px;
+  }
+
+  .playing_cards.face_down.player_hand:not(:first-child) {
+    margin-left: -45px;
+  }
+}

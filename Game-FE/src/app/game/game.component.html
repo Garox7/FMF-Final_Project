@@ -1,0 +1,30 @@
+<div class="game_container w-100">
+  <div class="container flex_column h-100">
+    <span class="material-symbols-outlined back_button" (click)="onExit()">
+      arrow_back
+    </span>
+    <div></div>
+    @if (match) {
+    <div class="game-table flex_column">
+      <app-computer-player class="w-100"></app-computer-player>
+      <app-decks [discardCards]="match.discardPiles" class="w-100"></app-decks>
+      <app-player class="w-100"></app-player>
+      <span class="p-2">
+        <h4>Round: {{ match.round }}</h4>
+      </span>
+    </div>
+
+    <app-modal
+      *ngIf="modal"
+      [title]="modalTitle"
+      [content]="modalContent"
+      [actions]="modalActions"
+      (actionClicked)="handleModalAction($event)"
+    ></app-modal>
+    } @else {
+    <div class="spinner-border text-light" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    }
+  </div>
+</div>

@@ -1,0 +1,27 @@
+.logout_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.logout_button {
+  background-color: rgba(255, 255, 255, 0.462);
+  border-radius: 50%;
+  padding: 8px;
+  margin: 8px;
+  cursor: pointer;
+  transform: rotate(180deg);
+  transition: all 0.2s ease-in;
+}
+
+.player_username {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.logout_button:hover {
+  background-color: white;
+}

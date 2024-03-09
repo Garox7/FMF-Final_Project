@@ -1,0 +1,59 @@
+.playing_cards {
+  position: relative;
+  font-weight: bold;
+  padding: 4px;
+  border: 1px solid black;
+  -webkit-text-stroke: 0.5px black;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.playing_cards.selected {
+  outline: solid white;
+  transform: translateY(-5px);
+}
+
+.card_body {
+  border-radius: 10px;
+  height: 100%;
+  border: 1px solid black;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.first_number,
+.second_number {
+  color: white;
+  position: absolute;
+  padding: 0 5px;
+  font-size: 24px;
+}
+
+.first_number {
+  top: 0;
+  left: 0;
+}
+
+.card_square {
+  background-color: white;
+  font-size: 50px;
+  width: 65%;
+  height: 40%;
+  border-radius: 2px;
+  transform: rotate(45deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_square > * {
+  transform: rotate(-45deg);
+}
+
+.second_number {
+  bottom: 0;
+  right: 0;
+  transform: rotate(180deg);
+}

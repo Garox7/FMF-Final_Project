@@ -1,0 +1,18 @@
+button.move_button {
+  width: 150px !important;
+  padding: 8px 15px;
+  background-image: linear-gradient(
+    to right,
+    #f09819 0%,
+    #edde5d 51%,
+    #f09819 100%
+  );
+}
+
+.player_card_container *:not(:first-child) {
+  margin-left: -55px;
+}
+
+.card_selector *:hover {
+  outline: solid white;
+}

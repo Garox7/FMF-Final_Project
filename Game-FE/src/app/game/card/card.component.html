@@ -1,0 +1,17 @@
+<div class="playing_cards" [ngClass]="{ selected: isSelected }">
+  <div class="card_body" [ngStyle]="{ backgroundColor: getCardColor() }">
+    <span class="first_number">
+      {{ card.value == 11 ? "#" : card.value }}
+    </span>
+
+    <div class="card_square">
+      <span class="center_number" [ngStyle]="{ color: getCardColor() }">
+        {{ card.value == 11 ? "#" : card.value }}
+      </span>
+    </div>
+
+    <span class="second_number">
+      {{ card.value == 11 ? "#" : card.value }}
+    </span>
+  </div>
+</div>

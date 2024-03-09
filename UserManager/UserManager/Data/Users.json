@@ -1,0 +1,102 @@
+[
+  {
+    "_password": "pass",
+    "_isBlocked": true,
+    "Id": "1",
+    "Username": "GiuseppeGarozzo",
+    "Name": "Giuseppe",
+    "Surname": "Garozzo",
+    "Token": "1c00ab98-6f77-452a-b0ae-9c2d9fa947a7",
+    "_tokenExpirationDate": "2023-12-19T15:30:14.697553Z"
+  },
+  {
+    "_password": "pass",
+    "_isBlocked": true,
+    "Id": "2",
+    "Username": "ProfMalgeri",
+    "Name": "Michele",
+    "Surname": "Malgeri",
+    "Token": "fcbbc4cc-b6b3-48bd-ba6c-322ad4c8cecb",
+    "_tokenExpirationDate": "2023-12-19T14:29:05.263412Z"
+  },
+  {
+    "_password": "pass",
+    "_isBlocked": true,
+    "Id": "3",
+    "Username": "DavideBrancato",
+    "Name": "Davide",
+    "Surname": "Brancato",
+    "Token": "c0ab832d-2540-4a1d-90f0-65b920876085",
+    "_tokenExpirationDate": "2023-12-18T19:42:06.103044Z"
+  },
+  {
+    "_password": "pass",
+    "_isBlocked": true,
+    "Id": "4",
+    "Username": "DavideRodo",
+    "Name": "Davide",
+    "Surname": "Rodo",
+    "Token": "412fab68-589a-4875-bf06-bdb4a9f8a2e0",
+    "_tokenExpirationDate": "2023-12-19T14:23:21.66219Z"
+  },
+  {
+    "_password": "pass",
+    "_isBlocked": true,
+    "Id": "5",
+    "Username": "MartinaBentivegna",
+    "Name": "Martina",
+    "Surname": "Bentivegna",
+    "Token": "a41b66e5-078f-44df-aa49-ce676497407f",
+    "_tokenExpirationDate": "2023-12-18T16:04:52.898492Z"
+  },
+  {
+    "_password": "pass",
+    "_isBlocked": true,
+    "Id": "6",
+    "Username": "SamueleSpina",
+    "Name": "Samuele",
+    "Surname": "Spina",
+    "Token": "a41b66e5-078f-44df-aa49-ce676497407f",
+    "_tokenExpirationDate": "2023-12-18T16:04:52.898492Z"
+  },
+  {
+    "_password": "pass",
+    "_isBlocked": true,
+    "Id": "7",
+    "Username": "RohanBahdoor",
+    "Name": "Rohan",
+    "Surname": "Bahdoor",
+    "Token": "a41b66e5-078f-44df-aa49-ce676497407f",
+    "_tokenExpirationDate": "2023-12-18T16:04:52.898492Z"
+  },
+  {
+    "_password": "pass",
+    "_isBlocked": true,
+    "Id": "8",
+    "Username": "VincenzoMaiorana",
+    "Name": "Vincenzo",
+    "Surname": "Maiorana",
+    "Token": "a41b66e5-078f-44df-aa49-ce676497407f",
+    "_tokenExpirationDate": "2023-12-18T16:04:52.898492Z"
+  },
+  {
+    "_password": "pass",
+    "_isBlocked": true,
+    "Id": "9",
+    "Username": "ProfCarchiolo",
+    "Name": "Vincenza",
+    "Surname": "Carchiolo",
+    "Token": "a41b66e5-078f-44df-aa49-ce676497407f",
+    "_tokenExpirationDate": "2023-12-18T16:04:52.898492Z"
+  },
+  {
+    "_password": "pass",
+    "_isBlocked": true,
+    "Id": "10",
+    "Username": "GabrieleAmoroso",
+    "Name": "Gabriele",
+    "Surname": "Amoroso",
+    "Token": "a41b66e5-078f-44df-aa49-ce676497407f",
+    "_tokenExpirationDate": "2023-12-18T16:04:52.898492Z"
+  }
+]
